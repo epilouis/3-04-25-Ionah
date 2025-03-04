@@ -6,7 +6,7 @@ let questions = [
     { question: "What’s my favorite word?", correct: "tite", options: ["Burat", "Tite", "Ulol"] },
     { question: "What's my always response when being complimented?", correct: "ediwow", options: ["Thank you", "Noo, I'm not", "Ediwow"] },
     { question: "What's my favorite flower?", correct: "lavender", options: ["Sunflower", "Roses", "Lavender"] },
-    { question: "What's my Love language?", correct: "Act of Service", options: ["Physical Touch", " Act of Service", "Quality Time"]}
+    { question: "What's my Love language?", correct: "act of service", options: ["Physical Touch", "Act of Service", "Quality Time"] }
 ];
 
 let currentQuestion = 0;
