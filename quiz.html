@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <button class="return" onclick="window.location.href='index.html'">Return</button>
+    <div class="container">
+        <h1>🔍 A Fun Quiz!</h1>
+
+        <p id="question">What’s my favorite color?</p>
+        <div id="options">
+            <button onclick="checkAnswer('purple')">Purple</button>
+            <button onclick="checkAnswer('red')">Red</button>
+            <button onclick="checkAnswer('blue')">Blue</button>
+        </div>
+        <p id="quizResult"></p>
+        
+        <button onclick="nextQuestion()">Next Question</button>
+        <p id="progress">Question 1 of 7</p>
+        <p id="score">Score: 0</p>
+    </div>
+    
+    <audio id="correctSound" src="corrrect.mp3"></audio>
+    <audio id="wrongSound" src="wrong.mp3"></audio>
+    <script src="quiz.js"></script>
+</body>
+</html>

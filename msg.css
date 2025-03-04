@@ -1,0 +1,98 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.letter {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 650px;
+    width: 90%;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+.letter p {
+    font-size: 1.5em;
+    line-height: 1.8;
+    color: #d63384;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.music-toggle, .return-button {
+ 
+    top: 10px;
+    background: #ff4f7b;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.music-toggle:hover, .return-button:hover {
+    background: #d63384;
+    transform: scale(1.1);
+}
+
+.music-toggle {
+    right: 20px;
+}
+
+.return-button {
+    left: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.confetti {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 3;
+}
+
+@media (max-width: 600px) {
+    .letter {
+        padding: 20px;
+        max-width: 95%;
+    }
+    .letter p {
+        font-size: 1.2em;
+    }
+    .music-toggle, .return-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}

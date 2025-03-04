@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <link rel="stylesheet" href="msg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="window.location.href='index.html'" class="return-button">⬅️ Return</button>
+    <button onclick="toggleMusic()" class="music-toggle">🎵 Play Music</button>
+   
+    
+   
+    
+    <div class="letter">
+        <p><strong>Dear</strong></p>
+
+        <p>Hello, a little reminder to be gentle with yourself always ha. I know the world is so cruel, so give yourself a chance to relax and chill.
+             Always remember that I will be always by your side when things got heavy. I will be here to tell you it's gonna be okay and I'll be here if you need a person to cry on.</p>
+
+        <p>I wrote this letter to remind you how amazing you are-never forget that. I'm also your little reminder that you are lovable. So don’t worry about showing your flaws because I’m here to embrace and accept all of them. I’m here to accept your whole personality and to always support you, no matter what.</p>
+
+        <p>Always focus on your studies and yourself. I'm just here to support you and give you the love you deserve. As long as I'm here, you will always have a kakampi in everything. When you feel burdened, don’t hesitate to chat or call me anytime - I’ll always be here for you. I Love You.</p>
+
+
+
+        <p class="signature">Yours truly,<br>Epi Louis Badilla</p>
+        
+        <p class="hidden-message" onclick="revealMessage()">💖 Tap here for a surprise 💖</p>
+    </div>
+    <canvas class="confetti" id="confettiCanvas"></canvas>
+    <script src="msg.js"></script>
+</body>
+</html>
